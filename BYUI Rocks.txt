@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1 {
+      margin-left:13%;
+
+      animation-duration: 3s;
+
+      animation-name: slidein;
+
+      animation-iteration-count: 1;
+
+      animation-direction: alternate;
+
+
+    }
+
+    
+@keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      75% {
+        font-size:300%;
+        margin-left:25%;
+        width:150%;
+      }
+      
+      to {
+        margin-left:13%;
+        width:100%;
+      }
+    }
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+
+
+    animation-name: box;
+
+    animation-duration: 0s;
+
+    animation-timing-function: linear;
+
+    animation-iteration-count: 1;
+
+    animation-direction: alternate;
+
+    animation-delay: 3s;
+} 
+
+@keyframes box {
+    0%   {background-color:blue; left:0px; top:0px;}
+    25%  {background-color:yellow; left:350px; top:0px;}
+    50%  {background-color:green; left:350px; top:200px;}
+    75%  {background-color:red; left:0px; top:200px;}
+    100% {background-color:blue; left:0px; top:0px;}
+}
+
+</style>
+</head>
+<body>
+  <div></div>
+  <h1>BYUI Rocks!</h1>
+  
+</body>
+</html>
